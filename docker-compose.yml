@@ -4,7 +4,7 @@ services:
     image: wordpress
     ports:
       - 8080:80
-    enviroment:
+    environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: bloguser
       WORDPRESS_DB_PASSWORD: test123,
@@ -14,7 +14,7 @@ services:
   db:
     image: mysql:5.3
     restart: always
-    enviroment:
+    environment:
       MYSQL_DATABASE: blogdb
       MYSQL_USER: bloguser
       MYSQL_PASSWORD: test123
